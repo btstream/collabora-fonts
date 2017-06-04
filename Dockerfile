@@ -6,7 +6,7 @@ ENV TERM=xterm
 
 RUN mkdir /usr/share/fonts/Custom
 
-VOLUME /usr/share/fonts/Custom
+VOLUME "/usr/share/fonts/Custom"
 
 ADD starup.sh /
 
