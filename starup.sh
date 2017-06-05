@@ -25,9 +25,5 @@ if [[ ! -e /etc/loolwsd/key.pem ]]; then
     cp /opt/ssl/certs/ca/root.crt.pem /etc/loolwsd/ca-chain.cert.pem
 fi
 
-if [[ -e /opt/collaboraoffice5.3/share/fonts/custom  ]]; then
-    rm -rf /opt/collaboraoffice5.3/share/fonts/custom
-fi
-
-cp -r /usr/share/fonts/Custom /opt/collaboraoffice5.3/share/fonts/custom
+cp -r /usr/share/fonts/Custom/* /opt/collaboraoffice5.3/share/fonts/truetype/
 bash /start-libreoffice.sh
