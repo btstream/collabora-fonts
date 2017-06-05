@@ -20,9 +20,9 @@ if [[ ! -e /opt/ssl/certs/ca ]]; then
 fi
 
 if [[ ! -e /etc/loolwsd/key.pem ]]; then
-    cp certs/servers/localhost/privkey.pem /etc/loolwsd/key.pem
-    cp certs/servers/localhost/cert.pem /etc/loolwsd/cert.pem
-    cp certs/ca/root.crt.pem /etc/loolwsd/ca-chain.cert.pem
+    cp /opt/ssl/certs/servers/localhost/privkey.pem /etc/loolwsd/key.pem
+    cp /opt/ssl/certs/servers/localhost/cert.pem /etc/loolwsd/cert.pem
+    cp /opt/ssl/certs/ca/root.crt.pem /etc/loolwsd/ca-chain.cert.pem
 fi
 
 if [[ -e /opt/collaboraoffice5.3/share/fonts/custom  ]]; then
